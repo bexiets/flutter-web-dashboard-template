@@ -11,6 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'routing/routes.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   Get.put(menu_controller.MenuController());
   Get.put(NavigationController());
   runApp(const MyApp());
